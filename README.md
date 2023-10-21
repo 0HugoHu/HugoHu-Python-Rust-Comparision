@@ -1,4 +1,4 @@
-## Week 7 Mini-project
+## Week 8 Mini-project
 
 > © Yadong (Hugo) Hu 2023
 > 
