@@ -55,7 +55,7 @@ For the Python version, the running time is ```1.005385s```, which is far slower
 
 The CPU and Memory usage are almost the same, and it really depends on the current system load. The reason the Rust version is a little bit slower probably because the external sysinfo package is slow.
 
-![](.tutorial/mini7.png)
+![](.tutorial/mini8.png)
 
 
 ## Run
