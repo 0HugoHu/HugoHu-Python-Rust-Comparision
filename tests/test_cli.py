@@ -19,7 +19,9 @@ class TestCountWords(unittest.TestCase):
     def test_count_words(self):
         # Test if the function correctly counts words in a file
         word_count = count_words(self.test_file)
-        self.assertEqual(word_count, 5)  # Expecting 5 words in the test sentence
+        self.assertEqual(
+            word_count, 5
+        )  # Expecting 5 words in the test sentence
 
     def test_empty_file(self):
         # Test when the input file is empty

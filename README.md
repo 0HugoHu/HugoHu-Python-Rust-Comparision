@@ -1,12 +1,4 @@
-[![Install](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/install.yml)
-
-[![Lint](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/lint.yml)
-
-[![Format](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/format.yml)
-
-[![Test](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Script-Package/actions/workflows/test.yml)
-
-## Week 6 Mini-project
+## Week 7 Mini-project
 
 > © Yadong (Hugo) Hu 2023
 > 
@@ -14,11 +6,11 @@
 
 <br />
 
-**Requirements: Package a Python script into a command-line tool and write a user guide.**
+**Requirements: Rewrite a Python script for data processing in Rust, highlighting the improvements in speed and resource usage.**
 
 
 ## Project Description
-Word Counter Command-Line Tool
+Word Counter Command-Line Tool in <i> Rust </i> and <i> Python </i>
 
 This is a simple command-line tool that counts the number of words in a text file.
 
@@ -29,14 +21,23 @@ This is a simple command-line tool that counts the number of words in a text fil
 3. Install the package in editable mode:
 
 ```bash
-pip install -e .
+# Python Version
+pip3 install -e .
+
+# Rust Version
+cd rust-package
+cargo install --path .
 ```
 
 ## Usage
 
 To count words in a text file, use the following command:
 ```bash
+# Python Version
 word_counter <path_to_text_file>
+
+# Rust Version
+word_counter_rust <path_to_text_file>
 ```
 
 e.g., count the word count in ```test.txt```
@@ -49,7 +50,10 @@ To see the guide, run
 word_counter --help
 ```
 
-![](.tutorial/week6-3.png)
+## Result
+For the Python version, the first time running the program, it takes unbelievable ```4.707080``` seconds to count the word in test.txt. Though the second time it's much faster: ```0.000038``` second, compared to the Rust version, it's still much slower.
+
+![](.tutorial/mini7.png)
 
 
 ## Run
@@ -63,6 +67,3 @@ make lint
 make test
 make run
 ```
-### Test Coverage
-
-![](.tutorial/week6-1.png)

@@ -4,7 +4,7 @@
     <option name="enabledOnReformat" value="true" />
     <option name="enabledOnSave" value="true" />
     <option name="pathToExecutable" value="/opt/homebrew/bin/black" />
-    <option name="sdkUUID" value="4700daa6-2556-40ac-abc2-c9627fa7d68d" />
+    <option name="sdkName" value="Python 3.9" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
 </project>
