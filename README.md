@@ -51,7 +51,9 @@ word_counter --help
 ```
 
 ## Result
-For the Python version, the first time running the program, it takes unbelievable ```4.707080``` seconds to count the word in test.txt. Though the second time it's much faster: ```0.000038``` second, compared to the Rust version, it's still much slower.
+For the Python version, the running time is ```1.005385s```, which is far slower than the Rust version ```0.212000s```.
+
+The CPU and Memory usage are almost the same, and it really depends on the current system load. The reason the Rust version is a little bit slower probably because the external sysinfo package is slow.
 
 ![](.tutorial/mini7.png)
 

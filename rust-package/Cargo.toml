@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 text_io = "0.1"
+time = "0.3.30"
+sysinfo = "0.29.10"
+
